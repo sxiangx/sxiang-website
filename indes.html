@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Date Invitation</title>
+</head>
+<body style="background-color: #f8f1f2;">
+  <header style="background-color: #fbe8d3; text-align: center; padding: 20px;">
+    <h1 style="color: #573d34;">Date Invitation</h1>
+  </header>
+  <section style="margin-top: 50px; text-align: center;">
+    <h2 style="font-weight: normal; color: #573d34;">Hi love</h2>
+    <p style="color: #8d7365; font-size: 18px; margin-bottom: 10px;">I wanna take you out on a date someday and i need you to pick which magical date you prefer</p>
+    <p style="color: #8d7365; font-size: 18px; margin-bottom: 10px;">First, pick sa here and tell me in chat which:</p>
+    <div id="gameContainer" style="display: flex; justify-content: center; flex-wrap: wrap;">
+      <button class="gameButton" style="padding: 10px 20px; font-size: 16px; background-color: #f4d9c6; color: #573d34; border: none; cursor: pointer; transition: background-color 0.3s; margin: 10px; border-radius: 5px;" onclick="showResult('Going to BugoysPeak')">Going to BugoysPeak</button>
+      <button class="gameButton" style="padding: 10px 20px; font-size: 16px; background-color: #f4d9c6; color: #573d34; border: none; cursor: pointer; transition: background-color 0.3s; margin: 10px; border-radius: 5px;" onclick="showResult('Movie Date in my Room')">Movie Date in my Room</button>
+      <button class="gameButton" style="padding: 10px 20px; font-size: 16px; background-color: #f4d9c6; color: #573d34; border: none; cursor: pointer; transition: background-color 0.3s; margin: 10px; border-radius: 5px;" onclick="showResult('Picnic in Dike')">Picnic in Dike</button>
+    </div>
+    <div id="resultContainer" style="display: none; margin-top: 30px;">
+      <p id="resultText" style="color: #573d34; font-size: 24px;">Your ideal date activity is...</p>
+      <button id="confirmButton" style="background-color: #f9c2a7; padding: 10px 20px; font-size: 16px; color: #573d34; border: none; cursor: pointer; transition: background-color 0.3s; border-radius: 5px;" onclick="confirmDate()">Let's create beautiful memories together love</button>
+    </div>
+  </section>
+  <footer style="background-color: #fbe8d3; color: #573d34; padding: 10px; position: fixed; bottom: 0; width: 100%;">
+    <p>Sxiang</p>
+  </footer>
+
+  <script>
+    function showResult(activity) {
+      var resultText = document.getElementById("resultText");
+      resultText.innerHTML = "Your ideal date activity is " + activity + "!";
+      var resultContainer = document.getElementById("resultContainer");
+      resultContainer.style.display = "block";
+    }
+
+    function confirmDate() {
+      alert("Hooray! bantay bitaw");
+    }
+  </script>
+</body>
+</html>
